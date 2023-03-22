@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trideum Coding Challenge</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation breadcrumb would work well as a component. -->
+  <a href="./index.html">Home</a><span> > </span>
+  <div class="dropdown">
+    <a href="./fibonacci.html" class="droplink">Fizz Buzz Challenge</a>
+    <div class="dropdown-content">
+      <a href="./fizzbuzz.html">Fizz Buzz Challenge</a>
+      <a href="./fibonacci.html">Fibonacci Sequence Challenge</a>
+      <a href="./combo.html">Combination Challenge</a>
+    </div>
+  </div>
+  <h1>Fizz Buzz Challenge</h1>
+  <div id="fizzbuzz-container">
+    <h2>Explanation</h3>
+    <p>This program accepts an integer as <b>Input</b> and produces an output for every integer fom zero to the input
+      number. It also replaces every number that is divisible by <b>Divisor 1</b> with <b>Phrase 1</b> and every number
+      that is divisible by <b>Divisor 2</b> with <b>Phrase 2</b>. Numbers that are divisible by both <b>Divisor 1</b> and
+      <b>Divisor 2</b> will be replaced by a concatenation of both <b>Phrase 1</b> and <b>Phrase 2</b>. <b>Input</b>, 
+      <b>Divisor 1</b>, and <b>Divisor 2</b> are integers with a minimum value of 1 and a maximum value of 100.
+    </p>
+    <h2>Result</h3>
+    <p class="result" id="result">[Result Placeholder]</p>
+    <form id="fizzbuzz-form">
+      <label for="fizzbuzz-input">Input:</label>
+      <input type="number" id="fizzbuzz-input" name="fizzbuzz-input" placeholder="1" min="1" max="100" required><br>
+      <label for="fizzbuzz-div1">Divisor 1:</label>
+      <input type="number" id="fizzbuzz-div1" name="fizzbuzz-div1" placeholder="3" min="1" max="100"><br>
+      <label for="fizzbuzz-div2">Divisor 2:</label>
+      <input type="number" id="fizzbuzz-div2" name="fizzbuzz-div2" placeholder="5" min="1" max="100"><br>
+      <label for="fizzbuzz-phr1">Phrase 1:</label>
+      <input type="text" id="fizzbuzz-phr1" name="fizzbuzz-phr1" placeholder="fizz"><br>
+      <label for="fizzbuzz-phr2">Phrase 2:</label>
+      <input type="text" id="fizzbuzz-phr2" name="fizzbuzz-phr2" placeholder="buzz"><br>
+      <button id="submit-btn" name="Submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <script type="module" src="./dist/trideum-challenge.js"></script>
+</body>
+
+</html>

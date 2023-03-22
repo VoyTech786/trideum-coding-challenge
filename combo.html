@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trideum Coding Challenge</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation breadcrumb would work well as a component. -->
+  <a href="./index.html">Home</a><span> > </span>
+  <div class="dropdown">
+    <a href="./fibonacci.html" class="droplink">Combination Challenge</a>
+    <div class="dropdown-content">
+      <a href="./fizzbuzz.html">Fizz Buzz Challenge</a>
+      <a href="./fibonacci.html">Fibonacci Sequence Challenge</a>
+      <a href="./combo.html">Combination Challenge</a>
+    </div>
+  </div>
+  <h1>Combination Challenge</h1>
+  <div id="fizzbuzz-container">
+    <h2>Explanation</h3>
+    <p>This program combines the <a href="./fizzbuzz.html">Fizz Buzz Challenge</a> and the 
+      <a href="./fibonacci.html">Fibonacci Sequence Challenge.</a> The inputs are:
+    </p>
+    <ul>
+      <li><b>Divisor 1</b> and <b>Divisor 2</b> from <a href="./fizzbuzz.html">Fizz Buzz</a>. Default values are <b>Divisor 1</b>=3 and <b>Divisor 2</b>=5.</li>
+      <li>Subsitution <b>Phrase 1</b> and <b>Phrase 2</b> from <a href="./fizzbuzz.html">Fizz Buzz</a>. Default values are <b>Phrase 1</b>="fizz" and <b>Phrase 2</b>="buzz".</li>
+      <li><b>Input X</b> from <a href="./fibonacci.html">Fibonacci Sequence</a>.</li>
+      <li><b>Input Y</b> and <b>Input Z</b> from <a href="./fibonacci.html">Fibonacci Sequence</a>. Default values are <b>Input Y</b>=1, and <b>Input Z</b>=2.</li>
+    </ul>
+    <p>Note: <b>Divisor 1</b>, <b>Divisor 2</b>, <b>Input X</b>, <b>Input Y</b>, and <b>Input Z</b> are all limited to integers between 1 and 100, inclusive.</p>
+    <p>Using these inputs, this program will display the sequence up to <i>F(x)</i>, except replaced with the Substitution Phrases you set.</p>
+    <p>Example: Setting <b>Input X</b> to 6 and using the default values yields: 1, 1, 2, fizz, buzz, 8.</p>
+    <h2>Result</h3>
+    <p class="result" id="result">[Result Placeholder]</p>
+    <form id="combo-form">
+      <label for="combo-divisor1">Divisor 1:</label>
+      <input type="number" id="combo-divisor1" name="combo-divisor1" placeholder="3" min="1" max="100"><br>
+      <label for="combo-divisor2">Divisor 2:</label>
+      <input type="number" id="combo-divisor2" name="combo-divisor2" placeholder="5" min="1" max="100"><br>
+      <label for="combo-phr1">Phrase 1:</label>
+      <input type="text" id="combo-phr1" name="combo-phr1" placeholder="fizz"><br>
+      <label for="combo-phr2">Phrase 2:</label>
+      <input type="text" id="combo-phr2" name="combo-phr2" placeholder="buzz"><br>
+      <label for="combo-inputx">Input X:</label>
+      <input type="number" id="combo-inputx" name="combo-inputx" placeholder="1" min="1" max="100" required><br>
+      <label for="combo-inputy">Input Y:</label>
+      <input type="number" id="combo-inputy" name="combo-inputy" placeholder="1" min="1" max="100"><br>
+      <label for="combo-inputz">Input Z:</label>
+      <input type="number" id="combo-inputz" name="combo-inputz" placeholder="2" min="1" max="100"><br>
+      <button id="submit-btn" name="Submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <script type="module" src="./dist/trideum-challenge.js"></script>
+</body>
+
+</html>
